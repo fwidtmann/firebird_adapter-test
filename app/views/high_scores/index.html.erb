@@ -7,8 +7,12 @@
     <tr>
       <th>Test1</th>
       <th>Test2</th>
+      <th>BooleanTest</th>
+      <th>boolean_domain</th>
       <th>if true or false Test1</th>
       <th>if true or false Test2</th>
+      <th>if true or false BooleanTest</th>
+      <th>if true or false boolean_domain</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -18,8 +22,12 @@
       <tr>
         <td><%= high_score.test1 %></td>
         <td><%= high_score.test2 %></td>
+        <td><%= high_score.boolean_test %></td>
+        <td><%= high_score.boolean_domain %></td>
         <td><%= high_score.test1 ? 'true' : 'false' %></td>
         <td><%= high_score.test2 ? 'true' : 'false'  %></td>
+        <td><%= high_score.boolean_test ? 'true' : 'false'  %></td>
+        <td><%= high_score.boolean_domain ? 'true' : 'false'  %></td>
         <td><%= link_to 'Show', high_score %></td>
         <td><%= link_to 'Edit', edit_high_score_path(high_score) %></td>
         <td><%= link_to 'Destroy', high_score, method: :delete, data: { confirm: 'Are you sure?' } %></td>
